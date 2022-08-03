@@ -3,9 +3,9 @@ import {Route, Routes} from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import {ProfileInfo} from "./People/users/UsersProfileInfo";
 import {HomePage} from "./components/HomePage/HomePage";
-import {PageFilms} from "./Swapi/components/HomePageFilms/PageFilms";
+import {PageFilms} from "./Films/components/HomePageFilms/PageFilms";
 import {PeopleList} from "./People/components/PeopleList";
-import {FilmInfo} from "./Swapi/components/OneFilmInfo/OneFilmInfo";
+import {FilmInfo} from "./Films/components/OneFilmInfo/OneFilmInfo";
 import {StarShipsInfo} from "./Starships/components/AllStarShipsInfo/StarShipsInfo";
 import {StarShipsList} from "./Starships/components/StarShipsList";
 
