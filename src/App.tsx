@@ -10,6 +10,8 @@ import {StarShipsInfo} from "./Starships/components/AllStarShipsInfo/StarShipsIn
 import {StarShipsList} from "./Starships/components/StarShipsList";
 import {PlanetsList} from "./Planets/PlanetsList";
 import {PlanetsCard} from "./Planets/PlanetsInfo/PlanetsInfo";
+import {Species} from "./Species/SpeciesList";
+import {SpeciesProfileInfo} from "./Species/components/SpeciesProfileInfo";
 
 
 export type AppProps = {
@@ -37,6 +39,8 @@ export const App = () => {
                 <Route path='/films/:id' element={<FilmInfo/>}/>
                 <Route path='/starships' element={<StarShipsList/>}/>
                 <Route path='/starships/:id' element={<StarShipsInfo/>}/>
+                <Route path='/species' element={<Species/>}/>
+                <Route path='/species/:id' element={<SpeciesProfileInfo/>}/>
                 <Route path='/planets' element={<PlanetsList/>}/>
                 <Route path='/planets/:id' element={<PlanetsCard/>}/>
             </Routes>

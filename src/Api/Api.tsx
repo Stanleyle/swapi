@@ -9,7 +9,8 @@ export enum TypeEnum {
     People='people',
     Starships='starships',
     Films='films',
-    Planets='planets'
+    Planets='planets',
+    Species = 'species'
 }
 
 export const allAPI = {

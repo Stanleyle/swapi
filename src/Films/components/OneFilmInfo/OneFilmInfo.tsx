@@ -27,32 +27,29 @@ export const FilmInfo: React.FC<ProfileInfoProps> = ({}) => {
 
 
     return (
-        <div>
-            <ProfileInfoS>
-                {oneFilmInfo?.title}
-            </ProfileInfoS>
-
-            <ProfileInfoS>
-
-                {oneFilmInfo?.director}
-            </ProfileInfoS>
-
-            <ProfileInfoS>
-                {oneFilmInfo?.episode_id}
-            </ProfileInfoS>
-        </div>
+        <Container>
+            <TextNames>
+                <StyledSpan>Title:</StyledSpan><span>{oneFilmInfo?.title}</span>
+            </TextNames>
+            <TextNames>
+                <StyledSpan>Director:</StyledSpan><span>{oneFilmInfo?.director}</span>
+            </TextNames>
+            <TextNames>
+                <StyledSpan>Episode:</StyledSpan><span>{oneFilmInfo?.episode_id}</span>
+            </TextNames>
+        </Container>
     )
 }
 
-const ProfileInfoS = styled.div`
+const Container = styled.div`
   background-color: white;
-  border: 2px solid gray;
-  border-radius: 10px;
-  width: 250px;
+  border-radius: 50px;
   cursor: pointer;
+`
+const TextNames = styled.li`
+  font-size: 75px;
 
-
-  :hover {
-    border-color: wheat;
-  }
+`
+const StyledSpan=styled.span`
+  color:red;
 `

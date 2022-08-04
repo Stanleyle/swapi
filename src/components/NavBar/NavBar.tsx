@@ -9,8 +9,8 @@ const NavBar = () => {
                 <NavLink to='/home'>Home</NavLink>
             </button>}
             <NavLink to='/films'/>
-            <NavLink to='/films/:id'/>
             <NavLink to= '/starships'/>
+            <NavLink to= '/species'/>
             <NavLink to= '/planets'/>
 
         </div>
