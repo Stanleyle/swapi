@@ -14,7 +14,9 @@ export const List :React.FC<ListProps> = ({allUsers, type}) => {
         <WrapperDIV>
             {allUsers.map(user => {
                 const id = user.url.split('/')[5]
-                return <ShortCard type={type} id={id} key={id} name={user.name || ''} gender={user.gender}
+                return <ShortCard type={type} id={id}
+                                  key={id} name={user.name || ''}
+                                  gender={user.gender}
                                   user={user.user}
                 />
             })}

@@ -11,6 +11,7 @@ const NavBar = () => {
             <NavLink to='/films'/>
             <NavLink to='/films/:id'/>
             <NavLink to= '/starships'/>
+            <NavLink to= '/planets'/>
 
         </div>
     );

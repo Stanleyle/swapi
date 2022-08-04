@@ -16,7 +16,7 @@ export const PeopleList: React.FC<AllUsersProps> = ({}) => {
     const [isFetching, setIsFetching] = useState(true)
     const [value, setValue] = useState<string>('')
 
-    const fetch = useCallback((searchParams?: string)=> {
+    const fetch = useCallback((searchParams?: string) => {
         return allAPI.getList(currentPage, TypeEnum.People, searchParams)
     }, [currentPage])
 
@@ -74,8 +74,8 @@ export const PeopleList: React.FC<AllUsersProps> = ({}) => {
             />
             <button
                 disabled={!value}
-                    type={'submit'}
-                    onClick={search}
+                type={'submit'}
+                onClick={search}
             >
                 search
             </button>

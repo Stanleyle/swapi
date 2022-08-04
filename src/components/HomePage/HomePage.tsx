@@ -14,6 +14,9 @@ export const HomePage = () => {
     const redirectStarships = () => {
         navigate(`/starships`)
     }
+    const redirectPlanets = () => {
+        navigate(`/planets`)
+    }
 
 
     return (<Wrapper>
@@ -21,6 +24,7 @@ export const HomePage = () => {
         <StyledButton onClick={redirectPeople}>People</StyledButton>
         <StyledButton onClick={redirectFilms}>Films</StyledButton>
         <StyledButton onClick={redirectStarships}>Starships</StyledButton>
+        <StyledButton onClick={redirectPlanets}>Planets</StyledButton>
 
     </Wrapper>)
 }

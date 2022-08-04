@@ -8,7 +8,8 @@ const instance = axios.create({
 export enum TypeEnum {
     People='people',
     Starships='starships',
-    Films='films'
+    Films='films',
+    Planets='planets'
 }
 
 export const allAPI = {
