@@ -27,32 +27,28 @@ export const ProfileInfo: React.FC<ProfileInfoProps> = ({}) => {
 
 
     return (
-        <div>
-            <ProfileInfoS>
-                {userProfile?.name}
-            </ProfileInfoS>
-
-            <ProfileInfoS>
-
-                {userProfile?.gender}
-            </ProfileInfoS>
-
-            <ProfileInfoS>
-                {userProfile?.height}
-            </ProfileInfoS>
-        </div>
+        <Container>
+            <TextNames>
+                <StyledSpan>Name:</StyledSpan><span>{userProfile?.name}</span>
+            </TextNames>
+            <TextNames>
+                <StyledSpan>Gender:</StyledSpan><span>{userProfile?.gender}</span>
+            </TextNames>
+            <TextNames>
+                <StyledSpan>Height:</StyledSpan><span>{userProfile?.height}</span>
+            </TextNames>
+        </Container>
     )
 }
-
-const ProfileInfoS = styled.div`
-  background-color:white;
-  border: 2px solid gray;
-  border-radius: 10px;
-  width: 250px;
+const Container = styled.div`
+  background-color: white;
+  border-radius: 50px;
   cursor: pointer;
-  
-  
-  :hover {
-    border-color: wheat;
-  }
+`
+const TextNames = styled.li`
+  font-size: 75px;
+
+`
+const StyledSpan=styled.span`
+  color:red;
 `

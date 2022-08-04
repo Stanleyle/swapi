@@ -8,6 +8,8 @@ import {PeopleList} from "./People/components/PeopleList";
 import {FilmInfo} from "./Films/components/OneFilmInfo/OneFilmInfo";
 import {StarShipsInfo} from "./Starships/components/AllStarShipsInfo/StarShipsInfo";
 import {StarShipsList} from "./Starships/components/StarShipsList";
+import {Species} from "./Species/SpeciesList";
+import {SpeciesProfileInfo} from "./Species/components/SpeciesProfileInfo";
 
 
 export type AppProps = {
@@ -35,6 +37,9 @@ export const App = () => {
                 <Route path='/films/:id' element={<FilmInfo/>}/>
                 <Route path='/starships' element={<StarShipsList/>}/>
                 <Route path='/starships/:id' element={<StarShipsInfo/>}/>
+                <Route path='/species' element={<Species/>}/>
+                <Route path='/species/:id' element={<SpeciesProfileInfo/>}/>
+
             </Routes>
         </div>
     );

@@ -28,32 +28,30 @@ export const StarShipsInfo: React.FC<ProfileInfoProps> = ({}) => {
 
 
     return (
-        <div>
-            <ShipInfo>
-                {shipInfo?.name}
-            </ShipInfo>
+        <Container>
+            <TextNames>
+                <StyledSpan>Name:</StyledSpan><span>{shipInfo?.name}</span>
+            </TextNames>
+            <TextNames>
+                <StyledSpan>Crew:</StyledSpan><span>{shipInfo?.crew}</span>
+            </TextNames>
+            <TextNames>
+                <StyledSpan>Length:</StyledSpan><span>{shipInfo?.length}</span>
+            </TextNames>
 
-            <ShipInfo>
-
-                {shipInfo?.crew}
-            </ShipInfo>
-
-            <ShipInfo>
-                {shipInfo?.length}
-            </ShipInfo>
-        </div>
+        </Container>
     )
 }
 
-const ShipInfo = styled.div`
+const Container = styled.div`
   background-color: white;
-  border: 2px solid gray;
-  border-radius: 10px;
-  width: 250px;
+  border-radius: 50px;
   cursor: pointer;
-
-
-  :hover {
-    border-color: wheat;
-  }
+`
+const TextNames = styled.li`
+  font-size: 75px;
+  
+`
+const StyledSpan=styled.span`
+  color:red;
 `

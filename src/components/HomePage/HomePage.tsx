@@ -14,6 +14,9 @@ export const HomePage = () => {
     const redirectStarships = () => {
         navigate(`/starships`)
     }
+    const redirectSpecies = () => {
+        navigate(`/species`)
+    }
 
 
     return (<Wrapper>
@@ -21,6 +24,7 @@ export const HomePage = () => {
         <StyledButton onClick={redirectPeople}>People</StyledButton>
         <StyledButton onClick={redirectFilms}>Films</StyledButton>
         <StyledButton onClick={redirectStarships}>Starships</StyledButton>
+        <StyledButton onClick={redirectSpecies}>Species</StyledButton>
 
     </Wrapper>)
 }
@@ -33,7 +37,8 @@ export const StyledButton = styled.button`
   border: 15px solid #781045;
   border-radius: 100px;
   width: 500px;
-  cursor: pointer;: hover {
+  cursor: pointer;
+: hover {
   border-color: #f12709;
 }
 
