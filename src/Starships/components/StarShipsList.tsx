@@ -17,7 +17,7 @@ export const StarShipsList: React.FC<StarShipsProps> = () => {
     const [value,setValue] = useState<string>('')
 
     const fetch = useCallback((searchParams?: string) => {
-        return allAPI.getList(page, TypeEnum.Starships, searchParams)
+        return allAPI.getList(page, TypeEnum.starships, searchParams)
     }, [page])
 
     useEffect(() => {

@@ -19,7 +19,7 @@ export const SpeciesProfileInfo: React.FC<SpeciesProfileInfoProps> = ({}) => {
     const [speciesProfile, setSpeciesProfile] = useState<SpecieProfile | null>(null)
 
     useEffect(() => {
-        id && allAPI.getInfo(id, TypeEnum.Species)
+        id && allAPI.getInfo(id, TypeEnum.species)
             .then(res => {
                 setSpeciesProfile(res)
             })

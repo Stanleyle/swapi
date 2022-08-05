@@ -18,7 +18,7 @@ export const PlanetsList: React.FC<AllPlanetsProps> = ({}) => {
     const [value, setValue] = useState<string>('')
 
     const fetch = useCallback((searchParams?: string) => {
-        return allAPI.getList(currentPage, TypeEnum.Planets, searchParams)
+        return allAPI.getList(currentPage, TypeEnum.planets, searchParams)
     }, [currentPage])
 
     useEffect(() => {

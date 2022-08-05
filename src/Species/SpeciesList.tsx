@@ -19,7 +19,7 @@ export const Species: React.FC<AllUsersProps> = ({}) => {
 
 
     const fetch = useCallback((searchParams?:string)=>{
-        return allAPI.getList(currentPage,TypeEnum.Species,searchParams)
+        return allAPI.getList(currentPage,TypeEnum.species,searchParams)
     },[currentPage])
 
     useEffect(() => {

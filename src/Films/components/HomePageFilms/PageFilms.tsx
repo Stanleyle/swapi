@@ -13,11 +13,11 @@ export const PageFilms = () => {
     const [value,setValue] = useState<string>('')
 
     const fetch = useCallback((searchParams:string)=>{
-        return allAPI.getList(1,TypeEnum.Films,searchParams)
+        return allAPI.getList(1,TypeEnum.films,searchParams)
     },[1])
 
     useEffect(() => {
-        allAPI.getList(1, TypeEnum.Films)
+        allAPI.getList(1, TypeEnum.films)
             .then(res => {
                 setFimList(res.results)
                 setIsFetching(false)

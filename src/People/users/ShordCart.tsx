@@ -15,7 +15,7 @@ type ShortCardProps = {
 export const ShortCard: React.FC<ShortCardProps> = ({name, gender, user, id, type,}) => {
     const navigate = useNavigate()
     const redirect = () => {
-        navigate(`/${type}/${id}`)
+        navigate(`/${type}/${id}`, {state: {type}})
     }
 
     return (

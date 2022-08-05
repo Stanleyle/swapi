@@ -17,7 +17,7 @@ export const PeopleList: React.FC<AllUsersProps> = ({}) => {
     const [value, setValue] = useState<string>('')
 
     const fetch = useCallback((searchParams?: string) => {
-        return allAPI.getList(currentPage, TypeEnum.People, searchParams)
+        return allAPI.getList(currentPage, TypeEnum.people, searchParams)
     }, [currentPage])
 
 
@@ -51,20 +51,6 @@ export const PeopleList: React.FC<AllUsersProps> = ({}) => {
 
 
     return <div>
-        {/*<>
-            {isFetching
-                ?
-                <img src={preloader} alt='my-gif'/>
-                :
-                <>
-                    <List allUsers={allUsers} type={'people'}/>
-                    {count > countPerPage &&
-                        <Pagination count={count}
-                                    countPerPage={countPerPage}
-                                    setCurrentPage={handeChangeCurrentPage}
-                                    currentPage={currentPage}/>}
-                </>}
-        </>*/}
         <>
             <input
                 value={value}
